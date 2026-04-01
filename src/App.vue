@@ -51,8 +51,27 @@ export default {
   font-family: 'Space Grotesk', sans-serif;
 }
 
-/* Light Theme */
+/* Light Theme - Green Theme */
 .light-theme {
+  --bg-primary: #F0FDF4;
+  --bg-secondary: #DCFCE7;
+  --bg-tertiary: #BBF7D0;
+  --text-primary: #14532D;
+  --text-secondary: #166534;
+  --accent-primary: #166534;
+  --accent-secondary: #4ADE80;
+  --accent-highlight: #EAB308;
+  --border-color: rgba(22, 101, 52, 0.2);
+  --card-bg: #FFFFFF;
+  --card-bg-hover: #F0FDF4;
+  --input-bg: #FFFFFF;
+  --success: #4ADE80;
+  --warning: #EAB308;
+  --error: #ef4444;
+}
+
+/* Dark Theme - Keep as is */
+.dark-theme {
   --bg-primary: #060E20;
   --bg-secondary: #0a1430;
   --bg-tertiary: #0f1a3a;
@@ -64,24 +83,6 @@ export default {
   --card-bg: rgba(10, 20, 48, 0.8);
   --card-bg-hover: rgba(10, 20, 48, 0.9);
   --input-bg: rgba(10, 20, 48, 0.6);
-  --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
-}
-
-/* Dark Theme */
-.dark-theme {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --bg-tertiary: #f1f5f9;
-  --text-primary: #060E20;
-  --text-secondary: #1e293b;
-  --accent-primary: #060E20;
-  --accent-secondary: #1e293b;
-  --border-color: rgba(6, 14, 32, 0.1);
-  --card-bg: #ffffff;
-  --card-bg-hover: #f8fafc;
-  --input-bg: #ffffff;
   --success: #10b981;
   --warning: #f59e0b;
   --error: #ef4444;
@@ -108,5 +109,9 @@ body, #app {
 ::-webkit-scrollbar-thumb {
   background: var(--accent-secondary);
   border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
 }
 </style>
