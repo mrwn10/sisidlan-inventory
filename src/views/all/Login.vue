@@ -2,7 +2,7 @@
   <div class="login-container">
     <div class="login-card">
       <div class="login-header">
-        <h1>SISIDLAN</h1>
+        <h1>SISIDLAN.LANGOY</h1>
       </div>
       
       <form @submit.prevent="handleLogin" class="login-form">
